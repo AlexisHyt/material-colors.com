@@ -1,0 +1,64 @@
+/*==============================================
+
+        Picker
+
+==============================================*/
+.picker{
+  width: 100%;
+  height: 50vh;
+  color: #000000;
+
+  background: #eee;
+
+  overflow-y: auto;
+
+  user-select: none;
+
+  &__table{
+    width: 95%;
+    height: 100%;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    &__header{
+      th{
+        width: 40px;
+      }
+    }
+
+    tr:not(:first-child){
+      th{
+        border-bottom: 1px solid #999;
+      }
+    }
+
+    td{
+      height: 40px;
+
+      span{
+        display: block;
+        height: 40px;
+        width: 40px;
+
+        margin-right: auto;
+        margin-left: auto;
+
+        transition: width 0.2s ease-out, height 0.2s ease-out;
+      }
+      span.active{
+        display: block;
+        height: 30px;
+        width: 30px;
+      }
+
+      &:not(:first-child){
+        border: 1px solid #999;
+      }
+    }
+
+    td.color_exporting{
+      background: #72368a;
+    }
+  }
+}

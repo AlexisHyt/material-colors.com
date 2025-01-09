@@ -1,0 +1,4 @@
+.tippy-box[data-theme~='personal'] {
+    background-color: tomato;
+    color: yellow;
+}

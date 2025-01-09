@@ -1,0 +1,11 @@
+.button {
+  background: #2196f3;
+  border: none;
+  min-width: 50px;
+  font-size: 1.2em;
+
+  &-rounded {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+  }
+}
